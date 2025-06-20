@@ -1,0 +1,21 @@
+{
+  "name": "TZ-CMD",
+  "description": "🤖 TZ-CMD WhatsApp Multi-Command Bot",
+  "repository": "https://github.com/username/zokou-bot",
+  "logo": "https://files.catbox.moe/xih6c5.jpg",
+  "keywords": ["whatsapp", "bot", "baileys", "nodejs"],
+  "env": {
+    "OPENAI_API_KEY": {
+      "description": "Your OpenAI API key for !ask command",
+      "required": true
+    }
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}

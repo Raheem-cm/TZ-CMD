@@ -1,0 +1,37 @@
+// 📁 commands/kick.js
+
+module.exports = {
+  name: "kick",
+  execute: async (sock, msg, args) => {
+    const from = msg.key.remoteJid;
+
+    // Check kama iko kwenye group
+    if (!from.endsWith("@g.us")) {
+      return await sock.sendMessage(from, { text: "❌ Hii command inafanya kazi tu kwenye group." });
+    }
+
+    // Check kama kuna mentioned users
+    const mentions = msg.message?.extendedTextMessage?.contextInfo?.mentionedJid;
+    if (!mentions || mentions.length === 0) {
+      return await sock.sendMessage(from, { text: "⚠️ Tumia:\n!kick @user" });
+    }
+
+    const sender = msg.key.participant || msg.key.remoteJid;
+
+    try {
+      await sock.sendMessage(from, {
+        text: `👢 Anatoa member...`,
+      });
+
+      await sock.groupParticipantsUpdate(from, mentions, "remove");
+
+      await sock.sendMessage(from, {
+        text: `✅ Member ametolewa.`,
+      });
+    } catch (err) {
+      await sock.sendMessage(from, {
+        text: "❌ Error kumtoa member: " + err.message,
+      });
+    }
+  },
+};

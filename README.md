@@ -39,4 +39,10 @@ DEPLOY SIMPLY RAHEEM-XMD-2
   <a href="https://github.com/Raheem-cm/TZ-CMD">
     <img src="https://img.shields.io/badge/Fork%20This-Repository-gold?style=for-the-badge&logo=github&logoColor=gold" />
   </a>
+</p>
 
+<p align="center">
+  <a href="https://dashboard.heroku.com/new?template=https://github.com/Raheem-cm/TZ-CMD/tree/main">
+   <img 
+  target="_blank"> <img title="DEPLOY TZ-CMD BOT" src="https://img.shields.io/badge/🇹🇿_DEPLOY_ON_HEROKU-000000?style=for-the-badge&logo=heroku&logoColor=gold&color=black" width="260" height="50"/>
+  </a>

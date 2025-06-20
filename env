@@ -1,0 +1,35 @@
+# ================================
+# 👑 OWNER SETTINGS
+# ================================
+NUMERO_OWNER="255763111390"
+OWNER_NAME="RAHEEM-CM"
+BOT_OWNER="Raheem"
+OWNER_JID="255763111390@s.whatsapp.net"
+
+# ================================
+# 🤖 BOT SETTINGS
+# ================================
+BOT_NAME="TZ-CMD"
+PREFIX="."                         # Command prefix (e.g. .menu, .kick etc)
+PUBLIC_MODE="non"                 # "oui" for public, "non" for private use only
+STARTING_BOT_MESSAGE="yes"        # Show welcome message on startup
+
+# ================================
+# ⚙️ AUTO SETTINGS
+# ================================
+AUTO_READ_STATUS="non"            # "oui" to auto-read status
+AUTO_DOWNLOAD_STATUS="oui"        # "oui" to auto-download media from status
+ANTI_DELETE_MESSAGE="yes"         # "yes" to catch deleted messages
+
+# ================================
+# 🛠️ OTHER SETTINGS
+# ================================
+IMAGE_MENU="https://files.catbox.moe/xih6c5.jpg"
+GITHUB_GIT="https://apis.ibrahimadams.us.kg"
+DATABASE_URL=""                   # For MongoDB or Supabase (optional)
+WARN_COUNT=""                     # Max warnings before action (optional)
+
+# ================================
+# 🧠 AI & API KEYS
+# ================================
+OPENAI_API_KEY="your_openai_key_here"
